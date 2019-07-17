@@ -14,7 +14,11 @@ import sys
 #
 
 def pickingNumbers(a):
-    # Write your code here
+    dic = dict()
+    for i in a:
+        dic[i] = dic.get(i,0) +1
+        dic[i+1] = dic.get(i+1,0) +1
+    return max(dic.values())
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
