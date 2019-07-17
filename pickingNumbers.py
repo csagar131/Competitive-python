@@ -17,7 +17,7 @@ def pickingNumbers(a):
     dic = dict()
     for i in a:
         dic[i] = dic.get(i,0) +1
-        dic[i+1] = dic.get(i+1,0) +1
+        dic[i+1] = dic.get(i+1,0) +1       # Counter from collection were introduced
     return max(dic.values())
 
 if __name__ == '__main__':
