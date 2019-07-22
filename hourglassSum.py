@@ -8,7 +8,7 @@ import sys
 
 # Complete the hourglassSum function below.
 def hourglassSum(arr):
-    mx =0
+    mx = -99999
     for i in range(len(arr)-2):
         for j in range(len(arr)-2):
             count = 9
