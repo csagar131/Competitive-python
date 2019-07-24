@@ -14,5 +14,5 @@ while t is not 0:
             #break
     
         
-/* for non optimized solution create a list with full number and
-         match with our main list    */
+# for non optimized solution create a list with full number and
+#        match with our main list    */
