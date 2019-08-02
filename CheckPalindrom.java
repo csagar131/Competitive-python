@@ -26,6 +26,19 @@ public class CheckPalindrom
 	   System.out.println("\nString is not palindrom");
 	 else
 	   System.out.println("\nString is palindrom");
+	/*******************without converting to array******************************************
+	for(int i=0;i<len/2;i++)
+	 {
+	   if(str.charAt(i) != str.charAt(len-i-1))
+	   {
+	     flag = false;
+	   }
+	 }
+	 
+	 if(flag)
+	   System.out.println("\nString is not palindrom");
+	 else
+	   System.out.println("\nString is palindrom");
+	*********************************************************************/
 	}
-	
 }
