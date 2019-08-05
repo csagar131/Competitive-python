@@ -13,7 +13,7 @@ def makeAnagram(a, b):
     c = 0
     print(a)
     print(b)
-    for i,j in a.items():
+    for i,j in a.items():      # method is taking too long to execute
         if i  not in b.keys():
             c = c + a.get(i)
         else:
@@ -31,7 +31,28 @@ def makeAnagram(a, b):
                 c = c + b.get(i)
     return c
 
+'''
+from math import fabs
 
+def number_needed(a, b):
+    letterArray = [0] * 26
+    for c in a:
+        index = ord(c) - ord('a');
+        letterArray[index]+=1
+    for c in b:
+        index = ord(c) - ord('a')
+        letterArray[index]-=1
+    result = 0
+    for i in letterArray:
+        result += fabs(i)
+    return int(result)
+    
+a = raw_input().strip()
+b = raw_input().strip()
+
+print number_needed(a, b)
+
+'''
 
 
 
