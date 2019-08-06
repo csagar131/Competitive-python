@@ -11,3 +11,8 @@ print("Number of occurence of 3 in arr =", countOf(arr, 3))
 from math import fabs
 
 math.fabs(number)    # will return the absolute value(positive value) of single interger
+
+##########################################################################################
+import random
+
+n = random.randint(1,101)     # will generate random number between 1 and 100
